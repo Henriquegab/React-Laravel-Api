@@ -18,7 +18,13 @@ class AlunoController extends Controller
     {
         $aluno = Aluno::all();
 
-        return $aluno;
+        $teste = [
+            'numero' => 1,
+            'nome' => 'henrique',
+
+        ];
+
+        return response()->json($aluno, 201);
     }
 
 
